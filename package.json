@@ -1,0 +1,14 @@
+{
+  "name": "current-time-microservice",
+  "version": "1.0.0",
+  "description": "Gets the current time",
+  "type": "module",
+  "main": "publisher.js",
+  "scripts": {
+    "start": "node publisher.js"
+  },
+  "author": "Denisa Marcisovska",
+  "dependencies": {
+    "zeromq": "^6.1.2"
+  }
+}
