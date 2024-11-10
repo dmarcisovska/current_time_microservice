@@ -12,12 +12,15 @@ async function run() {
     const minutes = current_time.getMinutes();
     const seconds = current_time.getSeconds();
 
+    const twelveHours = ((hours + 11) % 12) + 1; 
+    const amPm = hours >= 12 ? 'PM' : 'AM';
+
+    const formattedMinutes = minutes.toString().padStart(2, '0');
+    const formattedSeconds = seconds.toString().padStart(2, '0');
+
     
     const messages = {
-      current_time: `${hours}:${minutes}:${seconds}`,
-      current_hours: hours.toString(),
-      current_minutes: minutes.toString(),
-      current_seconds: seconds.toString(),
+      current_time:  `${twelveHours}:${formattedMinutes}:${formattedSeconds} ${amPm}`,
     }
 
     for (const [topic, message] of Object.entries(messages)) {
