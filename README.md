@@ -9,7 +9,7 @@ This microservice provides the current time  in a standard format using ZeroMQ's
 
 Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/current-date-time-microservice.git
+   git clone https://github.com/dmarcisovska/current_time_microservice.git
    cd current-date-time-microservice
 ```
 
